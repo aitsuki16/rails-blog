@@ -1,4 +1,7 @@
 <h1>Edit Post</h1>
+
+<%= render "form", article: @article %>
+
 <%= form_with model: @article do |form| %>
   <%= form.label :title %><br>
   <%= form.text_field :title %><br>
